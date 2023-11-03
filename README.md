@@ -1,70 +1,133 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Task Swapper MERN
 
-## Available Scripts
+## Description
+Task Swapper MERN is a web application that allows you to manage and swap tasks between two groups. This project is built using React and Redux for state management and Express and MongoDB for API creation. It provides features for sorting tasks, searching for tasks by keyword, and swapping tasks between two groups.
 
-In the project directory, you can run:
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone project with git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+  git clone https://github.com/ma-bdg-94/task-swapper-react.git
+  cd task-swapper-react
+```
 
-### `npm test`
+2. Install dependencies with npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  npm install --save
+  npm install --save-dev
+```
+  **OR**
 
-### `npm run build`
+```bash
+  npm i
+  npm i -D
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install backend dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  cd backend
+  npm install --save
+  npm install --save-dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  **OR**
 
-### `npm run eject`
+```bash
+  cd backend
+  npm i
+  npm i -D
+```
+   
+## Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the client only
+```bash
+  npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the server only
+```bash
+  npm run server
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start client and server
+```bash
+  npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Build
+```bash
+  npm run build
+```
 
-## Learn More
+Test
+```bash
+  npm run test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Eject
+```bash
+  npm run eject
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Features
 
-### Analyzing the Bundle Size
+- Task sorting by creation date or priority.
+- Task search by keyword.
+- Task check for details.
+- Task swapping between two groups.
+- Visual representation of task groups.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+- Upon opening the application, you'll see a list of tasks divided into two groups.
+- You can use the dropdown to sort tasks by creation date or priority.
+- Use the search bar to search for tasks by keyword.
+- Select one or more tasks by clicking on the circular checkbox.
+- Check on the task details by clicking on its title.
+- Stars next to task title represent its priority (1 or 2 or 3).
+- If tasks are selected, a "Move" button will appear. Click it to move the selected tasks to the other group.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Environment
+- NODE.JS: ^**18.17.1**
 
-### `npm run build` fails to minify
+### Server
+- EXPRESS.JS: ^**4.18.2**
+- MONGOOSE: ^**8.0.0**
+- CORS: ^**2.8.5**
+- DOTENV: ^**16.3.1**
+- HTTP-STATUS: ^**1.7.3**
+- NODEMON: ^**3.0.1**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Client
+- REACT: ^**18.2.0**
+- REACT-DOM: ^**18.2.0**
+- REACT-SCRIPTS: ^**5.0.1**
+- @TESTING-LIBRARY/JEST-DOM: ^**5.17.0**
+- @TESTING-LIBRARY/REACT: ^**13.4.0**
+- @TESTING-LIBRARY/USER-EVENT: ^**13.5.0**
+- @REDUXJS/TOOLKIT: ^**1.9.7**
+- REACT-REDUX: ^**8.1.3**
+- AXIOS: ^**1.6.0**
+- SASS: ^**1.69.5**
+- CONCURRENTLY: ^**8.2.2**
+
+
+## Used By
+
+This project is a part of technical assessment:
+
+- **SMTECH, Tunisia**
+
